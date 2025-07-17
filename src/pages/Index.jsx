@@ -16,28 +16,64 @@ const Index = () => {
 
 
 
+
+
   const services = [
     {
-      icon: <MdSpa className="text-3xl" />,
+      icon: "/soins.jpeg",
       title: "Soins Visage",
       description: "Extraction comédons, nettoyage en profondeur"
     },
     {
-      icon: <GiLipstick className="text-3xl" />,
+      icon: "/ongle1.jpg",
       title: "Onglerie",
       description: "Gainage gel, capsule, vernis, french"
     },
     {
-      icon: <GiEyelashes className="text-3xl" />,
+      icon: "/cil.jpg",
       title: "Cils & Sourcils",
       description: "Extensions cil à cil, microshading"
     },
     {
-      icon: <GiDiamondRing className="text-3xl" />,
+      icon: "/coiffure.jpg",
       title: "Coiffure VIP",
       description: "Perruques, brushing, tresses professionnelles"
     }
   ];
+
+
+
+
+
+const realisations = [
+    {
+      icon: "/soins1.jpg",
+      title: "Soins Visage",
+      description: "Extraction comédons, nettoyage en profondeur"
+    },
+    {
+      icon: "/ongle4.jpeg",
+      title: "Onglerie",
+      description: "Gainage gel, capsule, vernis, french"
+    },
+    {
+      icon: "/cil5.jpg",
+      title: "Cils & Sourcils",
+      description: "Extensions cil à cil, microshading"
+    },
+ 
+  ];
+
+
+
+
+
+
+
+
+
+
+
 
   return (
     <div className="overflow-hidden">
@@ -127,7 +163,7 @@ const Index = () => {
                 className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-[0_20px_40px_rgba(219,39,119,0.3)] transition-all duration-300 group"
               >
                 <div className="text-[hsl(330,81%,60%)] mb-4 group-hover:scale-110 transition-transform duration-300">
-                  {service.icon}
+                <img src={service.icon} alt={service.title}  className='w-[100%] h-[250px] object-cover rounded-lg'/>
                 </div>
                 <h3 className="font-playfair text-xl font-semibold text-[hsl(330,70%,45%)] mb-3">
                   {service.title}
@@ -209,7 +245,7 @@ const Index = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            {[1, 2, 3].map((item, index) => (
+            {realisations.map((item, index) => (
               <div
                 key={item}
                 data-aos="fade-up"
@@ -218,9 +254,9 @@ const Index = () => {
               >
                 <div className="aspect-square bg-gradient-to-br from-[hsl(350,70%,85%)] to-[hsl(15,85%,75%)] flex items-center justify-center">
                   <div className="text-white text-6xl opacity-50">
-                    {index === 0 && <MdSpa />}
-                    {index === 1 && <GiLipstick />}
-                    {index === 2 && <GiEyelashes />}
+                   <img src={item.icon} alt={item.title}    className="w-full h-[400px] object-cover object-center rounded-lg"/>
+                    {/* {index === 1 && <GiLipstick />}
+                    {index === 2 && <GiEyelashes />} */}
                   </div>
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end">

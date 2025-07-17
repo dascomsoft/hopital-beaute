@@ -41,10 +41,10 @@ const Header = () => {
               <GiDiamondRing className="text-white text-2xl" />
             </div>
             <div>
-              <h1 className="font-playfair text-xl font-bold text-[hsl(330,70%,60%)]">
+              <h1 className="font-playfair text-xl font-extrabold text-[hsl(330,70%,60%)]">
                 Dr. Aïcha Beauty
               </h1>
-              <p className="text-xs text-slate-900">Hôpital de la Beauté</p>
+              <p className="text-xs font-bold text-[hsl(330,70%,60%)]">Hôpital de la Beauté</p>
             </div>
           </NavLink>
 
