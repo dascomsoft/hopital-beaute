@@ -129,7 +129,7 @@ const Packs = () => {
   };
 
   return (
-    <div className="min-h-screen py-20">
+    <div className="min-h-screen pt-20">
       {/* Hero Section */}
       <section className="relative py-20 mb-16">
         <div 

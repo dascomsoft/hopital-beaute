@@ -52,7 +52,7 @@ const Index = () => {
         />
         
         {/* Glamour Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[rgba(219,39,119,0.9)] via-[rgba(244,114,182,0.8)] to-[rgba(252,165,165,0.7)]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[rgba(219,39,119,0.5)] via-[rgba(244,114,182,0.5)] to-[rgba(252,165,165,0.1)]" />
         
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4 text-center text-white">

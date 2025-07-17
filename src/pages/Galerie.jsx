@@ -7,7 +7,6 @@ import { useEffect } from 'react';
 
 
 
-
 const Galerie = () => {
 
    useEffect(() => {
@@ -25,7 +24,7 @@ const Galerie = () => {
       category: "Soins Visage",
       title: "Soin éclat avec extraction",
       description: "Résultat avant/après d'un soin visage complet",
-      icon: <MdSpa className="text-2xl" />,
+      icon: "/index.jpg",
       gradient: "from-blue-400 to-purple-400"
     },
     {
@@ -33,7 +32,7 @@ const Galerie = () => {
       category: "Onglerie",
       title: "Gainage gel avec french",
       description: "Ongles parfaitement stylés et durables",
-      icon: <GiLipstick className="text-2xl" />,
+      icon: "/ongle.jpeg",
       gradient: "from-pink-400 to-rose-400"
     },
     {
@@ -41,7 +40,7 @@ const Galerie = () => {
       category: "Extensions Cils",
       title: "Extension cil à cil volume",
       description: "Regard intensifié et naturel",
-      icon: <GiEyelashes className="text-2xl" />,
+      icon: "/extension.jpeg",
       gradient: "from-purple-400 to-indigo-400"
     },
     {
@@ -49,7 +48,7 @@ const Galerie = () => {
       category: "Coiffure",
       title: "Pose perruque lace frontale",
       description: "Transformation capillaire spectaculaire",
-      icon: <GiDiamondRing className="text-2xl" />,
+      icon: "/perruque.webp",
       gradient: "from-emerald-400 to-teal-400"
     },
     {
@@ -57,7 +56,7 @@ const Galerie = () => {
       category: "Nail Art",
       title: "Capsules avec décoration",
       description: "Créations artistiques personnalisées",
-      icon: <GiLipstick className="text-2xl" />,
+      icon: "decoration.webp",
       gradient: "from-orange-400 to-red-400"
     },
     {
@@ -65,7 +64,7 @@ const Galerie = () => {
       category: "Microshading",
       title: "Restructuration sourcils",
       description: "Sourcils parfaitement dessinés",
-      icon: <GiEyelashes className="text-2xl" />,
+      icon: "/sourcil1.jpg",
       gradient: "from-amber-400 to-orange-400"
     },
     {
@@ -73,7 +72,7 @@ const Galerie = () => {
       category: "Tresses",
       title: "Butterfly's locks avec mèches",
       description: "Coiffure moderne et élégante",
-      icon: <GiDiamondRing className="text-2xl" />,
+      icon: "/lock1.jpeg",
       gradient: "from-teal-400 to-cyan-400"
     },
     {
@@ -81,7 +80,7 @@ const Galerie = () => {
       category: "Pédicure",
       title: "Pédicure chaude premium",
       description: "Pieds parfaitement soignés",
-      icon: <MdSpa className="text-2xl" />,
+      icon: "pedicure1.jpg.jpg",
       gradient: "from-green-400 to-emerald-400"
     },
     {
@@ -89,7 +88,7 @@ const Galerie = () => {
       category: "Avant/Après",
       title: "Transformation complète",
       description: "Résultat pack beauté complet",
-      icon: <GiDiamondRing className="text-2xl" />,
+      icon: "transfo.jpg",
       gradient: "from-pink-400 to-purple-400"
     }
   ];
@@ -158,10 +157,7 @@ const Galerie = () => {
             >
               {/* Image Placeholder with Gradient */}
               <div className={`aspect-square bg-gradient-to-br ${item.gradient} flex items-center justify-center relative`}>
-                <div className="text-white text-6xl opacity-50 group-hover:scale-110 transition-transform duration-300">
-                  {item.icon}
-                </div>
-                
+                <img src={item.icon} alt={item.title}  className='w-[100%] h-[100%] object-cover'/>
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300" />
                 
@@ -340,7 +336,8 @@ const Galerie = () => {
                   <div>
                     <div className={`aspect-video bg-gradient-to-br ${item.gradient} flex items-center justify-center`}>
                       <div className="text-white text-8xl opacity-50">
-                        {item.icon}
+                        {/* {item.icon} */} <img src={item.icon} alt={item.title} />
+
                       </div>
                     </div>
                     <div className="p-6">

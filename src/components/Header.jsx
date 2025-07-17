@@ -41,10 +41,10 @@ const Header = () => {
               <GiDiamondRing className="text-white text-2xl" />
             </div>
             <div>
-              <h1 className="font-playfair text-xl font-bold text-[hsl(330,70%,45%)]">
+              <h1 className="font-playfair text-xl font-bold text-[hsl(330,70%,60%)]">
                 Dr. Aïcha Beauty
               </h1>
-              <p className="text-xs text-gray-600">Hôpital de la Beauté</p>
+              <p className="text-xs text-slate-900">Hôpital de la Beauté</p>
             </div>
           </NavLink>
 
@@ -55,8 +55,8 @@ const Header = () => {
                 key={item.name}
                 to={item.path}
                 className={({ isActive }) =>
-                  `relative text-sm font-medium transition-all duration-300 hover:text-[hsl(330,81%,60%)] ${
-                    isActive ? 'text-[hsl(330,81%,60%)]' : 'text-gray-700'
+                  `relative text-sm font-extrabold transition-all duration-300 hover:text-[hsl(330,81%,60%)] ${
+                    isActive ? 'text-[hsl(330,81%,60%)]' : 'text-stone-900'
                   } after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-[hsl(330,81%,60%)] after:left-0 after:-bottom-1 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 ${
                     isActive ? 'after:scale-x-100' : ''
                   }`
