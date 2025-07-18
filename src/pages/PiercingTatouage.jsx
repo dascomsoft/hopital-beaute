@@ -39,14 +39,9 @@ const PiercingTatouage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-900 via-pink-500 to-orange-300">
       {/* Hero Section */}
-
-
-
-
-
       <div className="relative z-0 py-24">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200')] bg-cover bg-center">
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-pink-900/70 backdrop-blur-sm" />
+        <div className="absolute inset-0 bg-[url('/review-bg.jpg')] bg-cover bg-center">
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-pink-200/70 backdrop" />
         </div>
 
         <div className="relative z-10 container mx-auto px-4 text-center">
@@ -204,10 +199,18 @@ const PiercingTatouage = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400',
-              'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400',
-              'https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=400',
-              'https://images.unsplash.com/photo-1582562124811-c09040d0a901?w=400'
+              'tatoo2.jpg',
+              'percingsou.jpg',
+              'tattoo1.jpeg',
+              'percing.jpg',
+               'tatto3.jpg',
+              'percingnez.jpg',
+              'percing3.jpg',
+              'tati.jpg',
+
+
+
+
             ].map((image, index) => (
               <div
                 key={index}

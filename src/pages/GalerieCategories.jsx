@@ -159,15 +159,15 @@ const GalerieCategories = () => {
         <div className="min-h-screen bg-gradient-to-br from-amber-50 via-pink-200 to-amber-50">
             {/* Hero Section */}
             <div className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1560264280-88b68371db39?w=1200')] bg-cover bg-center">
-                    <div className="absolute inset-0 bg-gradient-to-r from-pink-500/80 to-orange-300/80 backdrop-blur-sm" />
+                <div className="absolute inset-0 bg-[url('/review-bg.jpg')] bg-cover bg-center">
+                    <div className="absolute inset-0 bg-gradient-to-r from-pink-300/80 to-sky-300/80 backdrop-blur-sm" />
                 </div>
 
                 <div className="relative container mx-auto px-4 text-center">
-                    <h1 className="text-5xl md:text-6xl font-playfair text-white mb-6" data-aos="fade-up">
+                    <h1 className="text-5xl font-bold md:text-6xl font-playfair text-white mb-6" data-aos="fade-up">
                         Galerie par Catégories
                     </h1>
-                    <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+                    <p className="text-xl font-bold text-white/90 max-w-3xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="200">
                         Découvrez nos créations organisées par spécialités
                     </p>
                 </div>
