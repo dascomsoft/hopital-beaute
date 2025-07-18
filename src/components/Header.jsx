@@ -22,6 +22,10 @@ const Header = () => {
     { name: 'Packs Beauté', path: '/packs' },
     { name: 'Astuces', path: '/astuces' },
     { name: 'Galerie', path: '/galerie' },
+        { name: 'Galerie Catégories', path: '/galerie-categories' },
+
+    { name: 'Piercing & Tatouage', path: '/piercing-tatouage' },
+
     { name: 'Avis', path: '/avis' },
     { name: 'Contact', path: '/contact' },
   ];

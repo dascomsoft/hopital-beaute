@@ -17,6 +17,9 @@ import About from "./pages/About";
 import Galerie from "./pages/Galerie";
 import Contact from "./pages/Contact";
 import Avis from "./pages/Avis";
+import PiercingTatouage from "./pages/PiercingTatouage";
+import GalerieCategories from "./pages/GalerieCategories";
+
 
 
 const App = () => {
@@ -42,6 +45,9 @@ const App = () => {
                 <Route path="/astuces" element={<Astuces />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/galerie" element={<Galerie />} />
+                                <Route path="/galerie-categories" element={<GalerieCategories />} />
+
+                <Route path="/piercing-tatouage" element={<PiercingTatouage />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/avis" element={<Avis />} />
               </Routes>
