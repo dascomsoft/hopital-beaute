@@ -2,12 +2,22 @@ import React, { useState } from 'react';
 import { FaWhatsapp, FaPhone, FaMapMarkerAlt, FaEnvelope, FaClock, FaHeart } from 'react-icons/fa';
 import { GiDiamondRing } from 'react-icons/gi';
 import { useEffect } from 'react';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 
 
 
 const Contact = () => {
+
+
+     useEffect(() => {
+      AOS.init({
+        duration: 1000, 
+        once: true, 
+      });
+    }, []);
+
  
        useEffect(() => {
       window.scrollTo(0, 0);

@@ -3,11 +3,23 @@ import { FaWhatsapp, FaMapMarkerAlt, FaPhone, FaHeart, FaStar } from 'react-icon
 import { GiDiamondRing, GiSparkles } from 'react-icons/gi';
 import { MdSpa } from 'react-icons/md';
 import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const About = () => {
   const whatsappNumber = "237695070705";
   const phoneNumber = "237671044349";
   const whatsappMessage = "Bonjour! J'aimerais en savoir plus sur l'Institut Dr. Aïcha Beauty.";
+
+
+   useEffect(() => {
+      AOS.init({
+        duration: 1000, 
+        once: true, 
+      });
+    }, []);
+
+
 
      useEffect(() => {
       window.scrollTo(0, 0);

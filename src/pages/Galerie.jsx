@@ -3,11 +3,22 @@ import { FaWhatsapp, FaExpand, FaTimes } from 'react-icons/fa';
 import { GiLipstick, GiEyelashes, GiDiamondRing } from 'react-icons/gi';
 import { MdSpa } from 'react-icons/md';
 import { useEffect } from 'react';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 
 
 const Galerie = () => {
+
+
+
+     useEffect(() => {
+      AOS.init({
+        duration: 1000, 
+        once: true, 
+      });
+    }, []);
+
 
    useEffect(() => {
       window.scrollTo(0, 0);

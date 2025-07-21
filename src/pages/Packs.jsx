@@ -2,10 +2,19 @@ import React from 'react';
 import { FaWhatsapp, FaStar, FaCheck } from 'react-icons/fa';
 import { GiSparkles } from 'react-icons/gi';
 import { useEffect } from 'react';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 
 const Packs = () => {
+
+     useEffect(() => {
+      AOS.init({
+        duration: 1000, 
+        once: true, 
+      });
+    }, []);
+
 
    useEffect(() => {
       window.scrollTo(0, 0);

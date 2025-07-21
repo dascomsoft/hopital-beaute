@@ -3,10 +3,27 @@ import { FaWhatsapp, FaLeaf, FaHeart, FaStar } from 'react-icons/fa';
 import { GiWaterDrop, GiSparkles, GiBanana } from 'react-icons/gi';
 import { MdSpa, MdLightbulb } from 'react-icons/md';
 import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const Astuces = () => {
   const whatsappNumber = "237695070705";
   const whatsappMessage = "Bonjour! J'aimerais avoir plus de conseils beauté personnalisés.";
+
+
+
+     useEffect(() => {
+      AOS.init({
+        duration: 1000, 
+        once: true, 
+      });
+    }, []);
+
+
+
+
+
+
     useEffect(() => {
       window.scrollTo(0, 0);
     }, []);

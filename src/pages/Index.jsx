@@ -4,11 +4,27 @@ import { FaStar, FaWhatsapp, FaArrowRight } from 'react-icons/fa';
 import { GiDiamondRing, GiLipstick, GiEyelashes } from 'react-icons/gi';
 import { MdSpa } from 'react-icons/md';
 import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 
 const Index = () => {
   const whatsappNumber = "237695070705";
   const whatsappMessage = "Bonjour! Je souhaite réserver un rendez-vous à l'Hôpital de la Beauté.";
+
+
+
+
+     useEffect(() => {
+      AOS.init({
+        duration: 1000, 
+        once: true, 
+      });
+    }, []);
+   
+
+
+
 
    useEffect(() => {
       window.scrollTo(0, 0);

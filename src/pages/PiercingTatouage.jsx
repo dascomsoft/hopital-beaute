@@ -3,12 +3,23 @@ import { FaWhatsapp, FaStar, FaShieldAlt, FaHeart } from 'react-icons/fa';
 import { GiDiamonds, GiButterfly, GiRose, GiSparkles } from 'react-icons/gi';
 import { MdVerified, MdSecurity } from 'react-icons/md';
 import { useEffect } from 'react';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 
 
 
 const PiercingTatouage = () => {
+
+
+     useEffect(() => {
+      AOS.init({
+        duration: 1000, 
+        once: true, 
+      });
+    }, []);
+
+
 
     useEffect(() => {
        window.scrollTo(0, 0);
